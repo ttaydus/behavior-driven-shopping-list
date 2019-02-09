@@ -9,5 +9,10 @@ class ShoppingListItem{
         return this.isDone = true;
     };
 
+    unCheck(){
+        this.isDone = true;
+        return this.isDone = false;
+    };  
 
+    
   };

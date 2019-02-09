@@ -49,6 +49,12 @@ describe('ShoppingListItem has a uncheck method', () => {
   it('unCheck is a function', () => {
     soup.unCheck.should.be.a('function');
   });
+
+  it('ShoppingListItem method unCheck() will set isDone to true, then false', () => {
+    soup.unCheck();
+    (soup.isDone).should.equal(false);
+  });
+
 })
   
 
